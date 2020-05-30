@@ -35,7 +35,7 @@ job('NodeJS Docker example') {
             repositoryName('yanivomc/docker-nodejs-demo') //qa / dev
             buildContext('./basics')
             tag('${GIT_REVISION,length=9}')
-            registryCredentials('dockerhub')
+            registryCredentials('docker-hub')
             forcePull(false)
             forceTag(false)
             createFingerprints(false)
