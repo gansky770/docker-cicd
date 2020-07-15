@@ -22,7 +22,6 @@ node {
      sh label: '', script: '''
       docker run --rm -tid --name docker_test -p 3000:3000 gansky/docker-nodejs-demo:latest
       docker kill docker_test
-      docker rm  docker_test 
       '''
      }
    }
